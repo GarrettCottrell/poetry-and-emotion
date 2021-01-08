@@ -1,0 +1,8 @@
+<% @json.first(10).each_with_index do |poem, index| %>
+    <ul class="poem-<%= index %>">
+      <li class="Title"><%= poem[:title] %>
+      <li class="Author"><%= poem[:author] %>
+      <li class="Lines"><%= poem[:lines].join(" ") %>
+      <li class="Tone"><%= poem[:tone] %>
+    </ul>
+  <% end %>
